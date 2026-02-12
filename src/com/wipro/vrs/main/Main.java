@@ -16,12 +16,12 @@ public class Main {
 		ArrayList<Vehicle> vehicles = new ArrayList<>();
 		vehicles.add(new Vehicle("V001", "Swift", "CAR", true, 1500.0));
 		vehicles.add(new Vehicle("V002", "Activa", "BIKE", true, 500.0));
-		vehicles.add(new Vehicle("V003", "Innova", "SUV", false, 2500.0)); // currently unavailable
-		// Initialize customers
+		vehicles.add(new Vehicle("V003", "Innova", "SUV", false, 2500.0));
+
 		ArrayList<Customer> customers = new ArrayList<>();
 		customers.add(new Customer("C001", "Rahul Sharma", "DL12345", "REGULAR", 0));
 		customers.add(new Customer("C002", "ABC Corp", "NA_CORP", "CORPORATE", 0));
-		// Initialize rentals list (initially empty)
+
 		ArrayList<Rental> rentals = new ArrayList<>();
 		VehicleRentalService service = new VehicleRentalService(vehicles, customers, rentals);
 		try {
